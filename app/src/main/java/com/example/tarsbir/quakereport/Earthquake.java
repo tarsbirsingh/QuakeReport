@@ -3,12 +3,12 @@ package com.example.tarsbir.quakereport;
 public class Earthquake {
     private String mMagnitude;
     private String mLocation;
-    private String mDate;
+    private long mTimeInMillisecods;
 
-    public Earthquake(String mMagnitude, String mLocation, String mDate) {
+    public Earthquake(String mMagnitude, String mLocation, long timeInMillisecods) {
         this.mMagnitude = mMagnitude;
         this.mLocation = mLocation;
-        this.mDate = mDate;
+        this.mTimeInMillisecods = timeInMillisecods;
     }
 
     public String getMagnitude() {
@@ -19,7 +19,7 @@ public class Earthquake {
         return mLocation;
     }
 
-    public String getDate() {
-        return mDate;
+    public long getTimeInMilliseconds() {
+        return mTimeInMillisecods;
     }
 }
