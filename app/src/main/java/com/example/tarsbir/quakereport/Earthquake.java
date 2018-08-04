@@ -1,17 +1,17 @@
 package com.example.tarsbir.quakereport;
 
 public class Earthquake {
-    private String mMagnitude;
+    private double mMagnitude;
     private String mLocation;
-    private long mTimeInMillisecods;
+    private long mTimeInMilliseconds;
 
-    public Earthquake(String mMagnitude, String mLocation, long timeInMillisecods) {
+    public Earthquake(double mMagnitude, String mLocation, long timeInMilliseconds) {
         this.mMagnitude = mMagnitude;
         this.mLocation = mLocation;
-        this.mTimeInMillisecods = timeInMillisecods;
+        this.mTimeInMilliseconds = timeInMilliseconds;
     }
 
-    public String getMagnitude() {
+    public double getMagnitude() {
         return mMagnitude;
     }
 
@@ -20,6 +20,6 @@ public class Earthquake {
     }
 
     public long getTimeInMilliseconds() {
-        return mTimeInMillisecods;
+        return mTimeInMilliseconds;
     }
 }
